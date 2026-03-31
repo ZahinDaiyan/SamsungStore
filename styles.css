@@ -1,0 +1,63 @@
+:root {
+  /* background-color */
+  --clr-bg: #FFFFFF;
+  --clr-bg-surface: #F7F6F3;
+  --clr-bg-subtle: #EEEDEB;
+
+  /* text */
+  --clr-text: #1A1A1A;
+  --clr-text-muted: #5F5E5A;
+  --clr-text-hint: #B4B2A9;
+
+  /* brand */
+  --clr-primary: #1428A0;
+  --clr-primary-light: #E6F1FB;
+  --clr-accent: #378ADD;
+
+  /* utility */
+  --clr-border: #D3D1C7;
+  --clr-success: #1D9E75;
+  --clr-danger: #E24B4A;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: var(--clr-bg-surface);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  padding: 15px;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: var(--clr-text);
+}
+
+.header__logo {
+  color: var(--clr-primary);
+  font-size: 24px;
+}
+
+.btn--primary {
+  padding: 10px 20px;
+  background-color: var(--clr-primary);
+  color: #ffffff; 
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
