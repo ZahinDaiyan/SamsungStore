@@ -59,17 +59,22 @@ nav ul li {
 }
 
 .btn--primary {
+  margin-top: auto;
+  text-decoration: none;
   padding: 10px 20px;
   background-color: var(--clr-primary);
   color: #ffffff;
   border: none;
   cursor: pointer;
   border-radius: 4px;
+  display: block;
+  text-align: center;
 }
 
 .hero {
   text-align: center;
   padding: 80px 20px 40px;
+  background-color: var(--clr-bg);
 }
 
 .hero__title {
@@ -91,6 +96,54 @@ nav ul li {
 .hero__image img {
   max-width: 500px;
   width: 100%;
+}
+
+.featured {
+  text-align: center;
+}
+
+.featured__title {
+  font-size: 36px;
+  color: var(--clr-primary);
+  margin-bottom: 12px;
+}
+
+.featured__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  padding: 40px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+  border: 1px solid var(--clr-border);
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: var(--clr-bg-surface);
+}
+
+.car__body {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.card img {
+  height: 350px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card__name {
+  margin: 10px;
+}
+
+.card__price {
+  margin-bottom: 10px;
 }
 
 .footer {
